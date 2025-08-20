@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+<div class="container py-5 text-center">
+    <h2 class="mb-4">🔎 النتيجة</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <h5>📤 الصورة المرفوعة</h5>
+            <img src="{{ uploaded_image }}" class="img-fluid rounded shadow-lg">
+        </div>
+
+        {% if model_type == "Detection" %}
+        <div class="col-md-5">
+            <h5>📊 النتيجة</h5>
+            <div class="card bg-secondary p-3 rounded-4 shadow-lg">
+                <h3>{{ result }}</h3>
+                <p>Tumor Probability: {{ tumor_prob }}%</p>
+                <p>No Tumor Probability: {{ no_tumor_prob }}%</p>
+            </div>
+        </div>
+        {% elif model_type == "Segmentation" %}
+        <div class="col-md-5">
+            <h5>🖼 مكان الورم</h5>
+            <img src="{{ mask_image }}" class="img-fluid rounded shadow-lg">
+        </div>
+        {% endif %}
+    </div>
+
+    <a href="{{ url_for('index') }}" class="btn btn-light mt-4">🔄 تحليل صورة جديدة</a>
+</div>
+</body>
+</html>
