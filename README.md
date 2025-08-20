@@ -1,5 +1,5 @@
-![Background](https://github.com/user-attachments/assets/5dc6e3e3-0dd8-4368-a25e-c96bf54ecc35)
 
+![Background](https://github.com/user-attachments/assets/feececda-c0be-47df-aaf7-bf964aac8f30)
 
 
 # 🧠 Brain Tumor Detection & Segmentation
@@ -52,11 +52,15 @@ The system includes **two models**:
 
 ### 🔹 Detection (ResNet50)  
 - **Input MRI → Tumor / No Tumor Prediction**
-<img width="1920" height="1020" alt="Screenshot 2025-08-19 220503" src="https://github.com/user-attachments/assets/a0a562d2-a50a-4ce7-a656-c78f65d4e4c9" />
+- 
+<img width="1920" height="1020" alt="Screenshot 2025-08-19 220503" src="https://github.com/user-attachments/assets/b2d29a1f-ede9-4417-8a2f-1f6feafd4e1a" />
+
 
 ### 🔹 Segmentation (U-Net)  
 - **Input MRI → Segmented Tumor Region**
-<img width="1920" height="1020" alt="Screenshot 2025-08-19 220530" src="https://github.com/user-attachments/assets/8df45fc4-6f62-4087-b731-58cad2f67c6f" />
+
+<img width="1920" height="1020" alt="Screenshot 2025-08-19 220530" src="https://github.com/user-attachments/assets/46c0efe9-6f0a-4ddd-86ec-77126485bdc5" />
+
 
 
 ---
